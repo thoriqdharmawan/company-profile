@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="bg-gradient-to-r from-primary to-violet-400 max-w-screen-lg w-full px-16 py-10 rounded-xl -mt-12 mb-24 relative">
           <div className="w-3/4">
             <h3 className="font-extrabold text-4xl text-secondary mb-6">
-              Let's Make Simply Your Digital Adoption
+              Let&apos;s Make Simply Your Digital Adoption
             </h3>
             <p className="text-secondary">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
