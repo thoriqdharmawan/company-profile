@@ -1,76 +1,113 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
-  @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 224 71.4% 4.1%;
+@layer base {
+  :root {
+    --main-blue: #27aae1;
+    --main-blue-lightest: #e9f7fc;
 
-      --card: 0 0% 100%;
-      --card-foreground: 224 71.4% 4.1%;
+    --neutral-grey-200-bg: #f6f8fc;
+    --neutral-grey-300-disable-btn: #e3e8f5;
+    --neutral-grey-500-disable-text: #a7b8c9;
+    --neutral-grey-600-body-text: #667a8e;
+    --neutral-grey-900: #000f1f;
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 224 71.4% 4.1%;
+    --background: #ffffff;
+    --foreground: #000f1f;
 
-      --primary: 220.9 39.3% 11%;
-      --primary-foreground: 210 20% 98%;
+    --card: #ffffff;
+    --card-foreground: #000f1f;
 
-      --secondary: 220 14.3% 95.9%;
-      --secondary-foreground: 220.9 39.3% 11%;
+    --popover: #ffffff;
+    --popover-foreground: #000f1f;
 
-      --muted: 220 14.3% 95.9%;
-      --muted-foreground: 220 8.9% 46.1%;
+    --active: #27aae1;
+    --active-foreground: #fafafa;
 
-      --accent: 220 14.3% 95.9%;
-      --accent-foreground: 220.9 39.3% 11%;
+    --primary: #27aae1;
+    --primary-lightest: #e9f7fc;
+    --primary-foreground: #ffffff;
+    --primary-lightest-foreground: #27aae1;
 
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 20% 98%;
+    --secondary: #f5f5f5;
+    --secondary-foreground: #8e8e8e;
 
-      --border: 220 13% 91%;
-      --input: 220 13% 91%;
-      --ring: 224 71.4% 4.1%;
+    --muted: #f5f5f5;
+    --muted-foreground: #737373;
 
-      --radius: 0.5rem;
-    }
+    --accent: #e9f7fc;
+    --accent-foreground: #27aae1;
 
-    .dark {
-      --background: 224 71.4% 4.1%;
-      --foreground: 210 20% 98%;
+    --destructive: #f43f5e;
+    --destructive-foreground: #fafafa;
+    --destructive-lightest: #feecef;
+    --destructive-lightest-foreground: #f43f5e;
 
-      --card: 224 71.4% 4.1%;
-      --card-foreground: 210 20% 98%;
+    --success: #4fbc47;
+    --success-foreground: #fafafa;
+    --success-lightest: #edf8ed;
+    --success-lightest-foreground: #4fbc47;
 
-      --popover: 224 71.4% 4.1%;
-      --popover-foreground: 210 20% 98%;
+    --warning: #f59e0b;
+    --warning-foreground: #fafafa;
+    --warning-lightest: #fef5e7;
+    --warning-lightest-foreground: #f59e0b;
 
-      --primary: 210 20% 98%;
-      --primary-foreground: 220.9 39.3% 11%;
+    --border: #e3e8f5;
+    --input: #e5e5e5;
+    --ring: #e3e8f5;
+    --placeholder: #a7b8c9;
 
-      --secondary: 215 27.9% 16.9%;
-      --secondary-foreground: 210 20% 98%;
-
-      --muted: 215 27.9% 16.9%;
-      --muted-foreground: 217.9 10.6% 64.9%;
-
-      --accent: 215 27.9% 16.9%;
-      --accent-foreground: 210 20% 98%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 210 20% 98%;
-
-      --border: 215 27.9% 16.9%;
-      --input: 215 27.9% 16.9%;
-      --ring: 216 12.2% 83.9%;
-    }
+    --radius: 0.5rem;
+    --sidebar-width: 17rem;
+    --header-height: 4.25rem;
   }
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
+  .dark {
+    --background: #000f1f;
+    --foreground: #fafafa;
+
+    --card: #000f1f;
+    --card-foreground: #fafafa;
+
+    --popover: #000f1f;
+    --popover-foreground: #fafafa;
+
+    --active: #27aae1;
+    --active-foreground: #fafafa;
+
+    --primary: #000f1f;
+    --primary-foreground: #fafafa;
+
+    --secondary: #262626;
+    --secondary-foreground: #fafafa;
+
+    --muted: #262626;
+    --muted-foreground: #a3a3a3;
+
+    --accent: #262626;
+    --accent-foreground: #fafafa;
+
+    --destructive: #7f1d1d;
+    --destructive-foreground: #fafafa;
+
+    --border: #262626;
+    --input: #262626;
+    --ring: #e3e8f5;
+    --placeholder: #262626;
   }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground min-h-screen;
+  }
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  @apply text-lg 
+}

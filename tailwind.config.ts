@@ -1,60 +1,108 @@
-import type { Config } from "tailwindcss"
-const { fontFamily } = require("tailwindcss/defaultTheme")
-
-const config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
-  prefix: "",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1rem",
       screens: {
         "2xl": "1400px",
       },
     },
     extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-      },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        placeholder: "var(--placeholder)",
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+        neutral: {
+          grey: {
+            200: {
+              bg: "var(--neutral-grey-200-bg)",
+            },
+            300: {
+              "disable-btn": "var(--neutral-grey-300-disable-btn)",
+            },
+            500: {
+              "disable-text": "var(--neutral-grey-500-disable-text)",
+            },
+            600: {
+              "body-text": "var(--neutral-grey-600-body-text)",
+            },
+            900: {
+              DEFAULT: "var(--neutral-grey-900)",
+            },
+          },
+        },
+        main: {
+          blue: {
+            DEFAULT: "var(--main-blue)",
+            lightest: "var(--main-blue-lightest)",
+          },
+        },
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        active: {
+          DEFAULT: "var(--active)",
+          foreground: "var(--active-foreground)",
+        },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
+          lightest: {
+            DEFAULT: "var(--primary-lightest)",
+            foreground: "var(--primary-lightest-foreground)",
+          },
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
+        },
+        success: {
+          DEFAULT: "var(--success)",
+          foreground: "var(--success-foreground)",
+          lightest: {
+            DEFAULT: "var(--success-lightest)",
+            foreground: "var(--success-lightest-foreground)",
+          },
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "var(--destructive)",
+          foreground: "var(--destructive-foreground)",
+          lightest: {
+            DEFAULT: "var(--destructive-lightest)",
+            foreground: "var(--destructive-lightest-foreground)",
+          },
+        },
+        warning: {
+          DEFAULT: "var(--warning)",
+          foreground: "var(--warning-foreground)",
+          lightest: {
+            DEFAULT: "var(--warning-lightest)",
+            foreground: "var(--warning-lightest-foreground)",
+          },
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "var(--accent)",
+          foreground: "var(--accent-foreground)",
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "var(--popover)",
+          foreground: "var(--popover-foreground)",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
         },
       },
       borderRadius: {
@@ -64,12 +112,12 @@ const config = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0" },
+          from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+          to: { height: 0 },
         },
       },
       animation: {
@@ -78,7 +126,5 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config
-
-export default config
+  plugins: [require("tailwindcss-animate"), "prettier-plugin-tailwindcss"],
+}
