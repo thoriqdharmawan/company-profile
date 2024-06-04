@@ -25,14 +25,16 @@ export default function Hero() {
       </div>
 
       <div className="mt-28 bg-slate-800 w-full flex justify-center pb-28 text-secondary">
-        <div className="-mt-16 max-w-screen-md">
-          <Image
-            alt="hero"
-            width={768}
-            height={340}
-            src="/images/hero.jpg"
-            className="rounded-3xl"
-          />
+        <div className="-mt-16 max-w-screen-lg">
+          <div className="w-full flex justify-center">
+            <Image
+              alt="hero"
+              width={768}
+              height={340}
+              src="/images/hero.jpg"
+              className="rounded-3xl"
+            />
+          </div>
 
           <div className="mt-14">
             <div>
