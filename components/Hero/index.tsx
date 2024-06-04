@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mt-14">
       <div className="max-w-screen-md flex flex-col gap-6">
         <p className="text-center font-semibold text-primary">
           WELCOME TO META VISION
