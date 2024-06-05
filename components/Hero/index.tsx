@@ -36,19 +36,17 @@ export default function Hero() {
             />
           </div>
 
-          <div className="mt-14">
-            <div>
-              <h3 className="text-xl font-bold mb-6">
-                Companues That Use Meta Vision
-              </h3>
+          <div className="mt-14 max-w-screen-md">
+            <h3 className="text-xl font-bold mb-6">
+              Companues That Use Meta Vision
+            </h3>
 
-              <p className="text-secondary-foreground">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-                neque. Quod perspiciatis eligendi alias! Necessitatibus ab
-                reprehenderit quia placeat doloribus fugit illo saepe hic!
-                Officiis libero vero sequi iusto numquam.
-              </p>
-            </div>
+            <p className="text-secondary-foreground">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+              neque. Quod perspiciatis eligendi alias! Necessitatibus ab
+              reprehenderit quia placeat doloribus fugit illo saepe hic!
+              Officiis libero vero sequi iusto numquam.
+            </p>
           </div>
 
           <div className="grid grid-cols-3 mt-14">
