@@ -6,6 +6,7 @@ import useGetProducts from "@/api/products/useGetProducts";
 import { Products as IProducts } from "@/lib/interfaces/products";
 import ImageDialog from "../custom/ImageDialog";
 import { useState } from "react";
+import ProductLoader from "../custom/ProductLoader";
 
 interface ImageState {
   open: boolean;
@@ -41,6 +42,16 @@ export default function Products() {
       </div>
 
       <div className="flex w-full max-w-screen-lg flex-col gap-16">
+        {loading && (
+          <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 px-8 md:grid-cols-3 lg:grid-cols-4 xl:px-0">
+            {new Array(8).fill("").map((_, idx) => (
+              <div data-aos="fade-up" key={`${_ + idx}`}>
+                <ProductLoader />
+              </div>
+            ))}
+          </div>
+        )}
+
         {!loading && products?.[0] && (
           <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 px-8 md:grid-cols-3 lg:grid-cols-4 xl:px-0">
             {products?.slice(0, limit)?.map((product: IProducts) => (
