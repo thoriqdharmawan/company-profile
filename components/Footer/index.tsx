@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="bg-slate-800">
         <div className="flex flex-col items-center px-0 md:px-8">
           <div className="relative -mt-12 mb-24 w-full max-w-screen-lg rounded-none bg-gradient-to-r from-primary to-violet-400 px-16 py-10 md:rounded-xl">
-            <div className="w-full md:w-1/2 lg:w-3/4">
+            <div data-aos="fade-up" className="w-full md:w-1/2 lg:w-3/4">
               <h3 className="mb-6 text-4xl font-extrabold text-secondary">
                 Enhance Your Digital Journey with Meta Vision
               </h3>
@@ -27,11 +27,16 @@ export default function Footer() {
               height={280}
               src="/images/woman1.png"
               className="absolute bottom-0 right-12 hidden select-none md:block"
+              data-aos="fade-up"
+              data-aos-delay="600"
             />
           </div>
         </div>
 
-        <div className="flex justify-center pb-24 text-secondary">
+        <div
+          data-aos="fade-up"
+          className="flex justify-center pb-24 text-secondary"
+        >
           <div className="grid w-full max-w-screen-lg grid-cols-1 gap-12 px-8 pb-24 lg:grid-cols-2 lg:gap-24 lg:px-0">
             <div>
               <h2 className="text-xl font-extrabold">META Vision</h2>

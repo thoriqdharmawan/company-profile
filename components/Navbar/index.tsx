@@ -15,7 +15,9 @@ export default function Navbar() {
   };
 
   return (
-    <div className="sticky top-0 z-50 w-full bg-white py-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
+    <div
+      className="sticky top-0 z-50 w-full bg-white py-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]"
+    >
       <div className="m-auto flex max-w-screen-lg items-center justify-between px-6 sm:px-24 xl:px-0">
         <h2 className="text-xl font-extrabold">META Vision</h2>
 
