@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export default function ProductItem() {
   return (
-    <div className="rounded-xl overflow-hidden bg-white hover:shadow-2xl cursor-pointer">
-      <div className="h-36 w-full relative">
+    <div className="cursor-pointer overflow-hidden rounded-xl">
+      <div className="relative h-36 w-full">
         <Image alt="product" fill src="/images/hero.jpg" />
       </div>
 
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-4">Premium Fish</h3>
+      <div className="mt-2">
+        <h3 className="mb-4 text-xl font-bold">Premium Fish</h3>
         <p>
-          Lorem ipsum, dolor sit
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+          omnis.
         </p>
-        <p className="mt-4 font-semibold">Rp 12.000</p>
       </div>
     </div>
   );
