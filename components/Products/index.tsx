@@ -21,7 +21,10 @@ export default function Products() {
   });
 
   return (
-    <div className="flex w-full flex-col items-center gap-6 bg-slate-100 py-14">
+    <div
+      id="products"
+      className="flex w-full flex-col items-center gap-6 bg-slate-100 py-14"
+    >
       <div className="flex max-w-screen-lg flex-col gap-6 text-center">
         <p className="font-semibold text-primary">OUR PRODUCTS</p>
         <h2 className="text-4xl font-bold">

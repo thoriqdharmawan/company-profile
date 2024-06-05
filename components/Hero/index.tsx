@@ -36,10 +36,16 @@ export default function Hero() {
             />
           </div>
 
-          <div className="mt-14 max-w-screen-md">
+          <div id="about-us" className="mt-14 max-w-screen-md">
             <h3 className="mb-6 text-xl font-bold">What is Meta Vision?</h3>
 
             <p className="text-secondary-foreground">
+              Meta Vision is a leader in digital solutions, dedicated to
+              enhancing user experiences through innovative technology. Our team
+              has over 25 years of experience in the industry, and we are
+              committed to delivering top-notch services to our customers.
+            </p>
+            <p className="mt-3 text-secondary-foreground">
               Meta Vision is a leader in digital solutions, dedicated to
               enhancing user experiences through innovative technology. Our team
               has over 25 years of experience in the industry, and we are
