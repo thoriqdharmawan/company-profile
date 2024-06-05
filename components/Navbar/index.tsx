@@ -18,7 +18,8 @@ export default function Navbar() {
     <div className="sticky top-0 z-50 w-full bg-white py-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
       <div className="m-auto flex max-w-screen-lg items-center justify-between px-6 sm:px-24 xl:px-0">
         <h2 className="text-xl font-extrabold">META Vision</h2>
-        <div className="hidden md:flex select-none gap-6 md:gap-12">
+
+        <div className="flex select-none gap-6 md:gap-12">
           <p
             onClick={() => handleScrollTo("about-us", 920)}
             className="cursor-pointer text-sm font-semibold text-secondary-foreground"
