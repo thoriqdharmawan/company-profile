@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 export default function Hero() {
   return (
     <div className="mt-14 flex flex-col items-center">
-      <div className="flex max-w-screen-md flex-col gap-6">
+      <div className="flex max-w-screen-md flex-col gap-6 px-8 lg:px-0">
         <p className="text-center font-semibold text-primary">
           WELCOME TO META VISION
         </p>
@@ -19,13 +19,13 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="mt-6 flex gap-4">
+      <div className="mt-6 flex gap-4 px-8 lg:px-0">
         <Button>Discover</Button>
         <Button variant="outline">How We Work</Button>
       </div>
 
       <div className="mt-28 flex w-full justify-center bg-slate-800 pb-28 text-secondary">
-        <div className="-mt-16 max-w-screen-lg">
+        <div className="-mt-16 max-w-screen-lg px-8 lg:px-0">
           <div className="flex w-full justify-center">
             <Image
               alt="hero"
@@ -39,13 +39,7 @@ export default function Hero() {
           <div id="about-us" className="mt-14 max-w-screen-md">
             <h3 className="mb-6 text-xl font-bold">What is Meta Vision?</h3>
 
-            <p className="text-secondary-foreground">
-              Meta Vision is a leader in digital solutions, dedicated to
-              enhancing user experiences through innovative technology. Our team
-              has over 25 years of experience in the industry, and we are
-              committed to delivering top-notch services to our customers.
-            </p>
-            <p className="mt-3 text-secondary-foreground">
+            <p className="sm:text-md text-justify text-sm text-secondary-foreground">
               Meta Vision is a leader in digital solutions, dedicated to
               enhancing user experiences through innovative technology. Our team
               has over 25 years of experience in the industry, and we are
@@ -53,7 +47,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="mt-14 grid grid-cols-3">
+          <div className="mt-14 grid grid-cols-1 gap-y-8 md:grid-cols-3">
             <div className="text-center">
               <h4 className="mb-1 text-3xl font-bold text-primary">
                 25 Years+

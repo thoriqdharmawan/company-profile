@@ -25,7 +25,7 @@ export default function Products() {
       id="products"
       className="flex w-full flex-col items-center gap-6 bg-slate-100 py-14"
     >
-      <div className="flex max-w-screen-lg flex-col gap-6 text-center">
+      <div className="flex max-w-screen-lg flex-col gap-6 px-8 text-center lg:px-0">
         <p className="font-semibold text-primary">OUR PRODUCTS</p>
         <h2 className="text-4xl font-bold">
           Innovative Solutions for Your Digital Needs.
@@ -39,7 +39,7 @@ export default function Products() {
 
       <div className="flex w-full max-w-screen-lg flex-col gap-16">
         {!loading && products?.[0] && (
-          <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-3 lg:grid-cols-4">
+          <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 px-8 md:grid-cols-3 lg:grid-cols-4 xl:px-0">
             {products?.slice(0, limit)?.map((product: IProducts) => (
               <ProductItem
                 key={product.id}
