@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function Hero() {
   return (
-    <div className="mt-14 flex min-h-screen flex-col items-center">
+    <div className="mt-14 flex flex-col items-center">
       <div
         data-aos="fade-up"
         className="flex max-w-screen-md flex-col gap-6 px-8 lg:px-0"
